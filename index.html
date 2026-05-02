@@ -13,10 +13,21 @@ body {
   color: #eaeaea;
 }
 
+/* HEADER WITH CNC BACKGROUND */
 header {
-  padding: 100px 20px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9));
+  padding: 20px;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+    url('https://images.unsplash.com/photo-1581094794329-c8112a89af12');
+
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
@@ -33,9 +44,10 @@ p {
   line-height: 1.6;
 }
 
+/* BUTTONS */
 .btn {
   display: inline-block;
-  margin-top: 20px;
+  margin: 10px;
   padding: 12px 24px;
   background: #ff6600;
   color: white;
@@ -43,6 +55,11 @@ p {
   font-weight: bold;
 }
 
+.btn-whatsapp {
+  background: #25D366;
+}
+
+/* SECTIONS */
 section {
   padding: 60px 20px;
   max-width: 1000px;
@@ -73,8 +90,17 @@ footer {
 
 <header>
   <h1>Jharen Quinal</h1>
-  <p>Fanuc CNC Lathe Programming for Small & Medium Workshops Across Europe</p>
-  <a href="#contact" class="btn">Request Support</a>
+  <p>CNC Programming & Optimization for Fanuc Lathes Across Europe</p>
+
+  <!-- EMAIL BUTTON -->
+  <a href="mailto:jharen_quinal@yahoo.com?subject=CNC Support Request&body=Hello, I need help with:" class="btn">
+    Request Support
+  </a>
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/31600000000" class="btn btn-whatsapp">
+    Chat on WhatsApp
+  </a>
 </header>
 
 <section>
@@ -110,7 +136,7 @@ footer {
 <section id="contact">
   <h2>Contact</h2>
   <p>Send your drawing or issue — get feedback within 24 hours.</p>
-  <p>Email: your@email.com</p>
+  <p>Email: jharen_quinal@yahoo.com</p>
 </section>
 
 <footer>
