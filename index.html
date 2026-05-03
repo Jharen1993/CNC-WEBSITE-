@@ -14,19 +14,25 @@ body {
 
 /* HEADER WITH MACHINE BACKGROUND */
 header {
-    text-align: left;
+    position: relative;
+    text-align: center;
     padding: 140px 20px 100px;
-    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)), url("machine.jpg");
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
                 url("machine.jpg");
     background-size: cover;
     background-position: center;
 }
 
 /* LOGO */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .logo img {
-    width: 320px;
-    max-width: 90%;
-    margin-bottom: 20px;
+    width: 180px;
 }
 .hero-text {
     max-width: 500px;
