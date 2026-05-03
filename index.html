@@ -85,6 +85,21 @@ section {
 h3 {
     margin-top: 0;
 }
+    /* SLIDER */
+.slider {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
 </style>
 
 </head>
@@ -145,6 +160,31 @@ h3 {
 
     </div>
 </section>
+    <section>
+    <h2>My Work</h2>
 
+    <div class="slider">
+        <img src="work1.jpg" class="slide active">
+        <img src="work2.jpg" class="slide">
+        <img src="work3.jpg" class="slide">
+        <img src="work4.jpg" class="slide">
+        <img src="work5.jpg" class="slide">
+        <img src="work6.jpg" class="slide">
+        <img src="work7.jpg" class="slide">
+        <img src="work8.jpg" class="slide">
+        <img src="work9.jpg" class="slide">
+        <img src="work10.jpg" class="slide">
+    </div>
+</section>
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}, 2500);
+</script>
 </body>
 </html>
