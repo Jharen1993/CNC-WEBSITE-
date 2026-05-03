@@ -14,8 +14,8 @@ body {
 
 /* HEADER WITH MACHINE BACKGROUND */
 header {
-    text-align: center;
-    padding: 100px 20px;
+    text-align: left;
+    padding: 140px 20px 100px;
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)), url("machine.jpg");
                 url("machine.jpg");
     background-size: cover;
@@ -28,7 +28,10 @@ header {
     max-width: 90%;
     margin-bottom: 20px;
 }
-
+.hero-text {
+    max-width: 500px;
+    margin-left: 20px;
+}
 /* TEXT */
 h1 {
     font-size: 36px;
@@ -87,9 +90,8 @@ h3 {
 </head>
 
 <body>
-
 <header>
-
+    <div class="hero-text">
     <!-- LOGO -->
     <div class="logo">
         <img src="logo.jpg" alt="JQ CNC Logo">
@@ -107,7 +109,7 @@ h3 {
     <a href="https://wa.me/31659331170" class="btn whatsapp-btn">
         Chat on WhatsApp
     </a>
-
+    </div>
 </header>
 
 <!-- SERVICES -->
