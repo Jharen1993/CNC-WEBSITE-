@@ -3,150 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>JQ CNC | Fanuc Lathe Specialists</title>
+<title>JQ CNC</title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
+}
 
-    background: 
-        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
-        url("machine.jpg");
-
+/* HEADER WITH MACHINE BACKGROUND */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+                url("machine.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-}
-</style>
-
-/* HEADER */
-header {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
-              url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789');
-  background-size: cover;
-  background-position: center;
 }
 
 /* LOGO */
 .logo img {
-  width: 280px;
-  max-width: 90%;
+    width: 320px;
+    max-width: 90%;
+    margin-bottom: 20px;
 }
 
 /* TEXT */
 h1 {
-  font-size: 38px;
-  margin-bottom: 10px;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 p {
-  font-size: 18px;
-  color: #ccc;
+    font-size: 18px;
+    color: #ccc;
 }
 
 /* BUTTONS */
 .btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 14px 28px;
-  text-decoration: none;
-  color: white;
-  border-radius: 6px;
-  font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 28px;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
 .email-btn {
-  background: #ff6600;
+    background: #ff6600;
 }
 
 .whatsapp-btn {
-  background: #25D366;
+    background: #25D366;
 }
 
 /* SECTION */
 section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-/* SERVICES GRID */
+/* SERVICES */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .card {
-  background: #1a1a1a;
-  padding: 20px;
-  border-left: 4px solid #ff6600;
+    background: #1a1a1a;
+    padding: 20px;
+    border-left: 4px solid #ff6600;
 }
 
 h3 {
-  margin-top: 0;
+    margin-top: 0;
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
 
-  <!-- LOGO -->
-  <div class="logo">
-    <img src="logo.jpg" alt="JQ CNC Logo" style="width:150px;">
-  </div>
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="logo.jpg" alt="JQ CNC Logo">
+    </div>
 
-  <!-- DESCRIPTION -->
-  <p>
-    Fanuc CNC Lathe Programming for <b>2, 3 & 4 Axis Machines</b><br>
-    CNC Lathe Specialists Across Europe
-  </p>
+    <!-- TEXT -->
+    <h1>Fanuc CNC Lathe Programming for 2, 3 & 4 Axis Machines</h1>
+    <p>CNC Lathe Specialists Across Europe</p>
 
-  <!-- EMAIL BUTTON -->
-  <a href="mailto:jharen_quinal@yahoo.com?subject=CNC Support Request" class="btn email-btn">
-    Request Support
-  </a>
+    <!-- BUTTONS -->
+    <a href="mailto:jharen_quinal@yahoo.com" class="btn email-btn">
+        Request Support
+    </a>
 
-  <!-- WHATSAPP BUTTON -->
-  <a href="https://wa.me/31659331170" class="btn whatsapp-btn">
-    Chat on WhatsApp
-  </a>
+    <a href="https://wa.me/31659331170" class="btn whatsapp-btn">
+        Chat on WhatsApp
+    </a>
 
 </header>
 
+<!-- SERVICES -->
 <section>
-  <h2>Services</h2>
+    <h2>Services</h2>
 
-  <div class="grid">
+    <div class="grid">
 
-    <div class="card">
-      <h3>Fanuc G-Code Programming</h3>
-      <p>Custom CNC programs for 2, 3 & 4-axis lathe machines.</p>
+        <div class="card">
+            <h3>Fanuc G-Code Programming</h3>
+            <p>Custom CNC programs for 2, 3 & 4-axis lathe machines.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cycle Time Optimization</h3>
+            <p>Reduce machining time and increase productivity.</p>
+        </div>
+
+        <div class="card">
+            <h3>Remote Support</h3>
+            <p>Fast online assistance for CNC programming and issues.</p>
+        </div>
+
     </div>
-
-    <div class="card">
-      <h3>Cycle Time Optimization</h3>
-      <p>Reduce machining time and increase productivity.</p>
-    </div>
-
-    <div class="card">
-      <h3>Troubleshooting</h3>
-      <p>Fix alarms, errors, and machining issues quickly.</p>
-    </div>
-
-    <div class="card">
-      <h3>Remote Support</h3>
-      <p>Fast CNC support available across Europe.</p>
-    </div>
-
-  </div>
 </section>
 
 </body>
